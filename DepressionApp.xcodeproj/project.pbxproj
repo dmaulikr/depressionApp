@@ -14,6 +14,20 @@
 		EC36BA8E1BE02633001A9B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC36BA8C1BE02633001A9B3F /* LaunchScreen.storyboard */; };
 		EC36BA991BE02633001A9B3F /* DepressionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BA981BE02633001A9B3F /* DepressionAppTests.swift */; };
 		EC36BAA41BE02633001A9B3F /* DepressionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BAA31BE02633001A9B3F /* DepressionAppUITests.swift */; };
+		EC36BAB21BE0283A001A9B3F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BAB11BE0283A001A9B3F /* SignInViewController.swift */; };
+		EC36BAC11BE02C9A001A9B3F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BAB71BE02C9A001A9B3F /* AudioToolbox.framework */; };
+		EC36BAC21BE02C9A001A9B3F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BAB81BE02C9A001A9B3F /* CFNetwork.framework */; };
+		EC36BAC31BE02C9A001A9B3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BAB91BE02C9A001A9B3F /* CoreGraphics.framework */; };
+		EC36BAC41BE02C9A001A9B3F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BABA1BE02C9A001A9B3F /* CoreLocation.framework */; };
+		EC36BAC51BE02C9A001A9B3F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BABB1BE02C9A001A9B3F /* libsqlite3.tbd */; };
+		EC36BAC61BE02C9A001A9B3F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BABC1BE02C9A001A9B3F /* libz.tbd */; };
+		EC36BAC71BE02C9A001A9B3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BABD1BE02C9A001A9B3F /* QuartzCore.framework */; };
+		EC36BAC81BE02C9A001A9B3F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BABE1BE02C9A001A9B3F /* Security.framework */; };
+		EC36BAC91BE02C9A001A9B3F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BABF1BE02C9A001A9B3F /* StoreKit.framework */; };
+		EC36BACA1BE02C9A001A9B3F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BAC01BE02C9A001A9B3F /* SystemConfiguration.framework */; };
+		EC36BACC1BE02E0C001A9B3F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BACB1BE02E0C001A9B3F /* Parse.framework */; };
+		EC36BACE1BE02E13001A9B3F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36BACD1BE02E13001A9B3F /* Bolts.framework */; };
+		EC36BAD01BE03634001A9B3F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BACF1BE03634001A9B3F /* QuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +61,20 @@
 		EC36BA9F1BE02633001A9B3F /* DepressionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepressionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC36BAA31BE02633001A9B3F /* DepressionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepressionAppUITests.swift; sourceTree = "<group>"; };
 		EC36BAA51BE02633001A9B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC36BAB11BE0283A001A9B3F /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		EC36BAB71BE02C9A001A9B3F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EC36BAB81BE02C9A001A9B3F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EC36BAB91BE02C9A001A9B3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC36BABA1BE02C9A001A9B3F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC36BABB1BE02C9A001A9B3F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EC36BABC1BE02C9A001A9B3F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EC36BABD1BE02C9A001A9B3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EC36BABE1BE02C9A001A9B3F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EC36BABF1BE02C9A001A9B3F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EC36BAC01BE02C9A001A9B3F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC36BACB1BE02E0C001A9B3F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EC36BACD1BE02E13001A9B3F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		EC36BACF1BE03634001A9B3F /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC36BACE1BE02E13001A9B3F /* Bolts.framework in Frameworks */,
+				EC36BACC1BE02E0C001A9B3F /* Parse.framework in Frameworks */,
+				EC36BAC11BE02C9A001A9B3F /* AudioToolbox.framework in Frameworks */,
+				EC36BAC21BE02C9A001A9B3F /* CFNetwork.framework in Frameworks */,
+				EC36BAC31BE02C9A001A9B3F /* CoreGraphics.framework in Frameworks */,
+				EC36BAC41BE02C9A001A9B3F /* CoreLocation.framework in Frameworks */,
+				EC36BAC51BE02C9A001A9B3F /* libsqlite3.tbd in Frameworks */,
+				EC36BAC61BE02C9A001A9B3F /* libz.tbd in Frameworks */,
+				EC36BAC71BE02C9A001A9B3F /* QuartzCore.framework in Frameworks */,
+				EC36BAC81BE02C9A001A9B3F /* Security.framework in Frameworks */,
+				EC36BAC91BE02C9A001A9B3F /* StoreKit.framework in Frameworks */,
+				EC36BACA1BE02C9A001A9B3F /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +117,18 @@
 		EC36BA771BE02633001A9B3F = {
 			isa = PBXGroup;
 			children = (
+				EC36BACD1BE02E13001A9B3F /* Bolts.framework */,
+				EC36BACB1BE02E0C001A9B3F /* Parse.framework */,
+				EC36BAB71BE02C9A001A9B3F /* AudioToolbox.framework */,
+				EC36BAB81BE02C9A001A9B3F /* CFNetwork.framework */,
+				EC36BAB91BE02C9A001A9B3F /* CoreGraphics.framework */,
+				EC36BABA1BE02C9A001A9B3F /* CoreLocation.framework */,
+				EC36BABB1BE02C9A001A9B3F /* libsqlite3.tbd */,
+				EC36BABC1BE02C9A001A9B3F /* libz.tbd */,
+				EC36BABD1BE02C9A001A9B3F /* QuartzCore.framework */,
+				EC36BABE1BE02C9A001A9B3F /* Security.framework */,
+				EC36BABF1BE02C9A001A9B3F /* StoreKit.framework */,
+				EC36BAC01BE02C9A001A9B3F /* SystemConfiguration.framework */,
 				EC36BA821BE02633001A9B3F /* DepressionApp */,
 				EC36BA971BE02633001A9B3F /* DepressionAppTests */,
 				EC36BAA21BE02633001A9B3F /* DepressionAppUITests */,
@@ -100,6 +152,8 @@
 				EC36BA831BE02633001A9B3F /* AppDelegate.swift */,
 				EC36BA851BE02633001A9B3F /* ViewController.swift */,
 				EC36BA871BE02633001A9B3F /* Main.storyboard */,
+				EC36BACF1BE03634001A9B3F /* QuestionsViewController.swift */,
+				EC36BAB11BE0283A001A9B3F /* SignInViewController.swift */,
 				EC36BA8A1BE02633001A9B3F /* Assets.xcassets */,
 				EC36BA8C1BE02633001A9B3F /* LaunchScreen.storyboard */,
 				EC36BA8F1BE02633001A9B3F /* Info.plist */,
@@ -193,6 +247,7 @@
 				TargetAttributes = {
 					EC36BA7F1BE02633001A9B3F = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = QFC34JC9QL;
 					};
 					EC36BA931BE02633001A9B3F = {
 						CreatedOnToolsVersion = 7.1;
@@ -257,6 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC36BA861BE02633001A9B3F /* ViewController.swift in Sources */,
+				EC36BAB21BE0283A001A9B3F /* SignInViewController.swift in Sources */,
+				EC36BAD01BE03634001A9B3F /* QuestionsViewController.swift in Sources */,
 				EC36BA841BE02633001A9B3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +456,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DepressionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTech.tg339-CTech.DepressionApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +474,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DepressionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTech.tg339-CTech.DepressionApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

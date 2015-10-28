@@ -7,15 +7,50 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if NSUserDefaults.standardUserDefaults().objectForKey("UserName") == nil {
+            print("User not signed in")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let signInVC = storyboard.instantiateViewControllerWithIdentifier("SignIn")
+            
+            window?.rootViewController = signInVC
+
+
+        } else {
+            print("User exists")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let questionVC = storyboard.instantiateViewControllerWithIdentifier("Questions")
+            
+            window?.rootViewController = questionVC
+
+            
+        }
+        
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("fo5YzeQkIART63UkUCSmVTgcF2s1CIfv7uT7kdOz",
+            clientKey: "P4T7jPg8Je3X6SrF72dhW4eAlkzUubZSTHfxJR8E")
+        
+        
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
         return true
     }
 
