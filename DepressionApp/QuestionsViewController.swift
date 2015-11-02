@@ -8,8 +8,11 @@
 
 import UIKit
 import Parse
+import Bolts
+import Foundation
+import CoreLocation
 
-class QuestionsViewController: UIViewController {
+class QuestionsViewController: UIViewController{
 
     @IBOutlet weak var mentalHealthSlider: UISlider!
     @IBOutlet weak var mentalHealthResponse: UILabel!
@@ -17,24 +20,10 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var depressedSlider: UISlider!
     @IBOutlet weak var depressedResponse: UILabel!
     
+    let healthManager:HealthManager = HealthManager()
+    let locationManager = CLLocationManager()
     
-    @IBAction func submit(sender: UIButton) {
-        print("Items submited")
-        print("User: " + String(NSUserDefaults.standardUserDefaults().objectForKey("UserName")!))
-        print("Mental Health: " + String(Int(mentalHealthSlider.value)))
-        print("Depressed: " + String(Int(depressedSlider.value)))
-        
-        
-        let assessment = PFObject(className: "Assessment")
-        assessment["User"] = String(NSUserDefaults.standardUserDefaults().objectForKey("UserName")!)
-        assessment["Mental_Health"] = String(Int(mentalHealthSlider.value))
-        assessment["Depressed"] = String(Int(depressedSlider.value))
-        
-        
-        assessment.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Saved assessment.")
-        }
-    }
+    let defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +35,23 @@ class QuestionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func submit(sender: UIButton) {
+        print("Items submited")
+        print("User: " + String(NSUserDefaults.standardUserDefaults().objectForKey("UserName")!))
+        print("Mental Health: " + String(Int(mentalHealthSlider.value)))
+        print("Depressed: " + String(Int(depressedSlider.value)))
+        
+        let assessment = PFObject(className: "Assessment")
+        assessment["User"] = String(NSUserDefaults.standardUserDefaults().objectForKey("UserName")!)
+        assessment["Mental_Health"] = String(Int(mentalHealthSlider.value))
+        assessment["Depressed"] = String(Int(depressedSlider.value))
+        
+        assessment.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            print("Saved assessment.")
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -53,6 +59,7 @@ class QuestionsViewController: UIViewController {
     
     func sliderValueDidChange(sender:UISlider!)
     {
+        
         print((round(sender.value)))
         sender.setValue((round(sender.value)), animated: false)
 

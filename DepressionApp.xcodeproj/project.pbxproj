@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB958D111BE55D13006940E6 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958D101BE55D13006940E6 /* HealthManager.swift */; };
+		AB958D141BE56A28006940E6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB958D131BE56A28006940E6 /* HealthKit.framework */; };
 		EC36BA841BE02633001A9B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BA831BE02633001A9B3F /* AppDelegate.swift */; };
 		EC36BA861BE02633001A9B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36BA851BE02633001A9B3F /* ViewController.swift */; };
 		EC36BA891BE02633001A9B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC36BA871BE02633001A9B3F /* Main.storyboard */; };
@@ -48,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB958D101BE55D13006940E6 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		AB958D121BE56A28006940E6 /* DepressionApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DepressionApp.entitlements; sourceTree = "<group>"; };
+		AB958D131BE56A28006940E6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EC36BA801BE02633001A9B3F /* DepressionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepressionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC36BA831BE02633001A9B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC36BA851BE02633001A9B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 				EC36BAC31BE02C9A001A9B3F /* CoreGraphics.framework in Frameworks */,
 				EC36BAC41BE02C9A001A9B3F /* CoreLocation.framework in Frameworks */,
 				EC36BAC51BE02C9A001A9B3F /* libsqlite3.tbd in Frameworks */,
+				AB958D141BE56A28006940E6 /* HealthKit.framework in Frameworks */,
 				EC36BAC61BE02C9A001A9B3F /* libz.tbd in Frameworks */,
 				EC36BAC71BE02C9A001A9B3F /* QuartzCore.framework in Frameworks */,
 				EC36BAC81BE02C9A001A9B3F /* Security.framework in Frameworks */,
@@ -117,6 +123,7 @@
 		EC36BA771BE02633001A9B3F = {
 			isa = PBXGroup;
 			children = (
+				AB958D131BE56A28006940E6 /* HealthKit.framework */,
 				EC36BACD1BE02E13001A9B3F /* Bolts.framework */,
 				EC36BACB1BE02E0C001A9B3F /* Parse.framework */,
 				EC36BAB71BE02C9A001A9B3F /* AudioToolbox.framework */,
@@ -149,11 +156,13 @@
 		EC36BA821BE02633001A9B3F /* DepressionApp */ = {
 			isa = PBXGroup;
 			children = (
+				AB958D121BE56A28006940E6 /* DepressionApp.entitlements */,
 				EC36BA831BE02633001A9B3F /* AppDelegate.swift */,
 				EC36BA851BE02633001A9B3F /* ViewController.swift */,
 				EC36BA871BE02633001A9B3F /* Main.storyboard */,
 				EC36BACF1BE03634001A9B3F /* QuestionsViewController.swift */,
 				EC36BAB11BE0283A001A9B3F /* SignInViewController.swift */,
+				AB958D101BE55D13006940E6 /* HealthManager.swift */,
 				EC36BA8A1BE02633001A9B3F /* Assets.xcassets */,
 				EC36BA8C1BE02633001A9B3F /* LaunchScreen.storyboard */,
 				EC36BA8F1BE02633001A9B3F /* Info.plist */,
@@ -247,7 +256,15 @@
 				TargetAttributes = {
 					EC36BA7F1BE02633001A9B3F = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = QFC34JC9QL;
+						DevelopmentTeam = RMB83YZHH2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					EC36BA931BE02633001A9B3F = {
 						CreatedOnToolsVersion = 7.1;
@@ -315,6 +332,7 @@
 				EC36BAB21BE0283A001A9B3F /* SignInViewController.swift in Sources */,
 				EC36BAD01BE03634001A9B3F /* QuestionsViewController.swift in Sources */,
 				EC36BA841BE02633001A9B3F /* AppDelegate.swift in Sources */,
+				AB958D111BE55D13006940E6 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DepressionApp/DepressionApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -474,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DepressionApp/DepressionApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -555,6 +575,7 @@
 				EC36BAAA1BE02633001A9B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC36BAAB1BE02633001A9B3F /* Build configuration list for PBXNativeTarget "DepressionAppTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +584,7 @@
 				EC36BAAD1BE02633001A9B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC36BAAE1BE02633001A9B3F /* Build configuration list for PBXNativeTarget "DepressionAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +593,7 @@
 				EC36BAB01BE02633001A9B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
